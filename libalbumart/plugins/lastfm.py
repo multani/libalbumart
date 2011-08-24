@@ -1,5 +1,6 @@
 import logging
-import urllib
+from urllib import urlencode
+import urllib2
 from xml.etree import ElementTree as ETree
 
 from libalbumart.utils import LazyURLsOpener
@@ -30,7 +31,7 @@ class LastFM(object):
         self.logger = logging.getLogger("libalbumart.plugins.lastfm")
 
         if url_opener is None:
-            self.opener = urllib.FancyURLopener()
+            self.opener = urllib2.build_opener()
         else:
             self.opener = url_opener
 
@@ -45,7 +46,7 @@ class LastFM(object):
                 type: value.encode('utf-8'),
                 'api_key': self.API_KEY,
             }
-            url = "%s?%s" % (self.url, urllib.urlencode(params))
+            url = "%s?%s" % (self.url, urlencode(params))
 
             self.logger.debug("Calling URL: %s", url)
 
