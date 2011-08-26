@@ -1,0 +1,13 @@
+content-length: 17936
+via: 1.0 cache8.sov.last.fm:8081 (squid/2.7.STABLE7)
+x-cache: HIT from cache8.sov.last.fm
+age: 322499
+expires: Mon, 29 Aug 2011 09:39:40 GMT
+x-web-node: www159
+x-proxy-fix-up: headers fixed up
+connection: close
+cache-control: max-age=604800
+date: Mon, 22 Aug 2011 09:39:40 GMT
+server: Apache/1.3.39 (Unix)
+content-type: text/xml; charset=utf-8;
+x-cache-lookup: HIT from cache8.sov.last.fm:8081

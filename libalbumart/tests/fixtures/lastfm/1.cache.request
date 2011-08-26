@@ -1,0 +1,2 @@
+GET http://ws.audioscrobbler.com/2.0/?album=Somewhere+In+Time&api_key=166213f4a8ec2e428923dbd9ea9c87b7&method=album.search
+Host: ws.audioscrobbler.com
